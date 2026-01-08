@@ -16,23 +16,34 @@ console.log("INNER: ",a);
 // console.log(c);
 
 // ******************************
- function one(){
-    const username="roopesh"
-    function two(){
-        const website="youtube"
-        console.log(username);
+//  function one(){
+//     const username="roopesh"
+//     function two(){
+//         const website="youtube"
+//         console.log(username);
         
-    }
+//     }
     // console.log(website);
     // two()
 //  }
 //  one()
- if(true){
-    const username="roopesh"
-    if (username==="roopesh"){
-        const website="youtube"
-        console.log(username + website);
-    }
-    console.log(website)
- }
- console.log(username);
+//  if(true){
+//     const username="roopesh"
+//     if (username==="roopesh"){
+//         const website="youtube"
+//         console.log(username + website);
+//     }
+//     // console.log(website);
+//  }
+//  console.log(username);
+
+//********************Intresting****** */
+// console.log(addone(5))
+// function addone(num){
+// return num+1
+// }
+// addTwo(5)
+// const addTwo=function(num){
+//     return num+2
+// }
+
