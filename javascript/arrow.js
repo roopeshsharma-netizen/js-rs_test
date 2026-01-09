@@ -51,3 +51,38 @@
     
 })();
 
+//*****************JAVASCRIPT Execution Context
+// let val1=10
+// let val2=5
+// function addNum=(num1,num2){
+//     let tital=num1+num2
+//     return total
+// }
+// let result1=addNum(val1,val2)
+// let result2=addNum(10,2)
+
+// step->1.Global Execution(allocate under this)
+//       2.memory phase
+//       val1->undefined
+//       val2->undefined
+//       addNum->definition
+//       result1->undefined
+//       result2->undefined
+//      3.Execution phase
+//      val1->10
+//      val2->5
+//      addNum->kuch bhi nahi kyoni isme kuch bhi nahi hoga
+//      result1->addNum[new variable Env. +execution thread] will be delete
+//      result1 will store ->15
+//      memory phase      execution context
+//      val1->undefined   num1->10
+//      val2->undefined   num2->5
+//      return on global exe context
+
+//      -------------------
+//      NVe+thread exe
+//      memory phase   execution phase
+//      repeat previous cycle
+
+//**call stack
+
