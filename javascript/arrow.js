@@ -34,8 +34,20 @@
 
 //const addTwo=(num1,num2) => num1 + num2
 // const addTwo=(num1,num2) => (num1 + num2)
-const addTwo=(num1,num2) => ({username: "roopesh"})
-console.log(addTwo(3,4));
+// const addTwo=(num1,num2) => ({username: "roopesh"})
+// console.log(addTwo(3,4));
 
-const myArray=[2,5,3,7,8]
-myArray.forEach()
+// const myArray=[2,5,3,7,8]
+// myArray.forEach()
+
+//IIFE
+// (function coffee(){//named IIFE
+//     console.log('DB connected');
+// })()
+//coffee() //()due to global scope polution to remove global scope polution we used IFFE
+
+(()=>{
+    console.log('DB connected two');
+    
+})();
+
