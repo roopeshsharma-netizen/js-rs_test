@@ -1,11 +1,11 @@
-const user={
-    username:"roopesh",
-    price:1000,
-    welcomeMessage: function(){
-     console.log(`${this.username} ,welcome to website`);  
-    console.log(this);
-    }
-}
+// const user={
+//     username:"roopesh",
+//     price:1000,
+//     welcomeMessage: function(){
+//      console.log(`${this.username} ,welcome to website`);  
+//     console.log(this);
+//     }
+// }
 // user.welcomeMessage()
 //  user.username="robert"
 //  user.welcomeMessage()
@@ -20,9 +20,22 @@ const user={
 //  console.log(this.username);
 // }
 
-const coffee=()=>{
- let username="roopesh"   
- console.log(this.username);
-//  console.log(this);
-}
-coffee()
+// const coffee=()=>{
+//  let username="roopesh"   
+//  console.log(this.username);
+// //  console.log(this);
+// }
+// coffee()
+
+// const addTwo=(num1,num2)=>{
+//     return num1+num2
+// }
+//implicit return:assume no need to write return statment die to single line
+
+//const addTwo=(num1,num2) => num1 + num2
+// const addTwo=(num1,num2) => (num1 + num2)
+const addTwo=(num1,num2) => ({username: "roopesh"})
+console.log(addTwo(3,4));
+
+const myArray=[2,5,3,7,8]
+myArray.forEach()
