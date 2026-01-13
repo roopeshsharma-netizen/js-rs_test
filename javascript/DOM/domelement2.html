@@ -10,30 +10,38 @@
         <li class="lang">JavaScript</li>
 </body>
 <script>
-    function addLanguage(lanName){
+    function addLanguage(langName){
      const li = document.createElement('li');
-        li.className = 'lang';
-        li.innerHTML = ``${lanName}`;
+        li.className = 'golang';
+        li.innerHTML = `${lanName}`;
         document.querySelector('.languages').appendChild(li);
     }
         addLanguage('Python');
         addLanguage('TypeScript');
         //optimized version
-        function addLanguageOptimized(lanName){
+        function addLanguageOptimized(langName){
             const li=document.createElement('li');
             const addText=
             li.appendChild(document.createTextNode(lanName))
             document.querySelector('.languages').appendChild(li);
         }
             addLanguageOptimized('golang');
-    //    addLanguageOptimized('Python');
-    //     addLanguageOptimized('TypeScript');
+    // addLanguageOptimized('Python');
+    // addLanguageOptimized('TypeScript');
     //Edit
     const secondLang=document.querySelector("li:nth-child(2)");
+    console.log(secondLang);
     //secondLang.innerHTML="MOJO";
-    document.createElement('li')
+    const newli=document.createElement('li')
     newli.textContent="MOJO"
-    secondLang.replaceWith(newli);
+    secondLang.replaceWith(newli)
 
+    //edit
+    const firstLang=document.querySelector("li:first-child")
+    firstLang.outerHTML='<li>Typescript</li>'
+
+    //remove
+    const lastLang = document.querySelector('li:last-child');
+    lastLang.remove()
 </script>
 </html>
