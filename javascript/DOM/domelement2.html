@@ -23,8 +23,17 @@
             const li=document.createElement('li');
             const addText=
             li.appendChild(document.createTextNode(lanName))
-            }
-        addLanguageOptimized('Python');
-        addLanguageOptimized('TypeScript');
+            document.querySelector('.languages').appendChild(li);
+        }
+            addLanguageOptimized('golang');
+    //    addLanguageOptimized('Python');
+    //     addLanguageOptimized('TypeScript');
+    //Edit
+    const secondLang=document.querySelector("li:nth-child(2)");
+    //secondLang.innerHTML="MOJO";
+    document.createElement('li')
+    newli.textContent="MOJO"
+    secondLang.replaceWith(newli);
+
 </script>
 </html>
