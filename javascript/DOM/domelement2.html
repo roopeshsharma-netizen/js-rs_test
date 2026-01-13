@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coffee aur code|DOM</title>
+</head>
+<body style="background-color: #212121;color: #fff;">
+    <ul class="languages">
+        <li class="lang">JavaScript</li>
+</body>
+<script>
+    function addLanguage(lanName){
+     const li = document.createElement('li');
+        li.className = 'lang';
+        li.innerHTML = ``${lanName}`;
+        document.querySelector('.languages').appendChild(li);
+    }
+        addLanguage('Python');
+        addLanguage('TypeScript');
+        //optimized version
+        function addLanguageOptimized(lanName){
+            const li=document.createElement('li');
+            const addText=
+            li.appendChild(document.createTextNode(lanName))
+            }
+        addLanguageOptimized('Python');
+        addLanguageOptimized('TypeScript');
+</script>
+</html>
