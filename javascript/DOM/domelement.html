@@ -14,4 +14,24 @@
         <div class="day">Thursday</div>
    </div> 
 </body>
+<script>
+const parent = document.querySelector('.parent');
+// console.log(parent);
+// console.log(parent.children); // HTMLCollection(4) [div.day, div.day, div.day, div.day]
+// console.log(parent.children[1].innerHTML); // Tuesday
+// for(let i=0; i<parent.children.length; i++){
+//     console.log(parent.children[i].innerHTML);  
+// }
+parent.children[2].style.color = "orange";
+// console.log(parent.firstElementChild);
+// console.log(parent.lastElementChild);
+
+const dayone = document.querySelector('.day');
+// dayone.style.color = "lightgreen";
+// console.log(dayone);
+// console.log(dayone.parentElementSibling);
+// console.log(dayone.nextElementSibling.nextElementSibling);
+console.log("NODE: ",parent.childNodes);
+
+</script>
 </html>
